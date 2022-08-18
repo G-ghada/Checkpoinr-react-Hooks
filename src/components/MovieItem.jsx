@@ -1,5 +1,7 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import { Link } from "react-router-dom";
+import Details from "./Details";
 
 function MovieItem(props) {
   let fontBold = { fontWeight: "bold" };
@@ -29,7 +31,17 @@ function MovieItem(props) {
         </ListGroup.Item>
       </ListGroup>
       <Card.Body>
-        <Card.Link>See more</Card.Link>
+        <button type="button" id="btn">
+          <Link
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+            }}
+            to={`/Details/${props.id}`}
+          >
+            See more
+          </Link>
+        </button>
       </Card.Body>
     </Card>
   );

@@ -22,3 +22,15 @@ code {
 .movie-item {
     margin-bottom: 25px;
 }
+#btn {
+    /* outline: none; */
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 2px 2px 0px black;
+    background: green;
+}
+#btn:active {
+    background: orangered;
+}

@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { data } from "../data";
 import AddMovie from "./AddMovie";
 import MovieItem from "./MovieItem";
+import { Outlet } from "react-router-dom";
+
 function MoviesList(props) {
   const [movies, setMovies] = useState(data);
 
   return (
     <div className="movie-list">
       <AddMovie movies={movies} setMovies={setMovies} />
+      <Outlet />
       <div className="movies-container">
         {movies
           .filter((element) =>
@@ -41,6 +44,7 @@ function MoviesList(props) {
               />
             );
           })}
+        <Outlet />
       </div>
     </div>
   );
