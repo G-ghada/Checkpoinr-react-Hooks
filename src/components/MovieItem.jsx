@@ -37,7 +37,7 @@ function MovieItem(props) {
               textDecoration: "none",
               color: "inherit",
             }}
-            to={`/Details/${props.id}`}
+            to={`Details/${props.id}`}
           >
             See more
           </Link>

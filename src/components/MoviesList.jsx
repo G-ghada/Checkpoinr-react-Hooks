@@ -35,6 +35,7 @@ function MoviesList(props) {
             return (
               <MovieItem
                 key={index}
+                id = {movie.id}
                 title={movie.title}
                 cover={movie.cover}
                 realisateur={movie.realisateur}

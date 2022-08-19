@@ -22,7 +22,7 @@ function App() {
           />
             <Route path="AddMovie" element={<AddMovie />} />
             <Route path="MovieItem" element={<MovieItem />} />
-            <Route path="Details" element={<Details />} />
+            <Route path="Details/:id" element={<Details />} />
         </Route>
       </Routes>
     </div>

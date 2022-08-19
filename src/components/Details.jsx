@@ -49,7 +49,7 @@ function Details() {
                 textDecoration: "none",
                 color: "inherit",
               }}
-              to={`/MoviesList/${<MoviesList/>}`}
+              to={`/MoviesList${<MoviesList/>}`}
             >
               Back to list
             </Link>
